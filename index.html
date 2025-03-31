@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Life !!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Coding life !!</h1>
+    </header>
+    
+    <section>
+        <h2>Introduction to HTML</h2>
+        <!-- Ordered list with Roman numerals -->
+        <ol type="I">
+            <li>Introduction to HTML5</li>
+            <li>Basic Structure</li>
+            <li>Semantic Elements</li>
+            <li>Forms and Input Types</li>
+            <li>Multimedia Integration</li>
+        </ol>
+    </section>
+    
+    <section>
+        <h2> Let the adventure begin !!</h2>
+        <!-- External image from Pexels -->
+        <img src="https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg" 
+             alt="Landscape photography from Pexels" 
+             title="Coding Life">
+        <p>Photo credit: Pexels.com</p>
+    </section>
+    
+    <section>
+        <h2> Tutors Info </h2>
+        <!-- Table with 5 contacts -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Smith Bahati</td>
+                    <td>Kenya</td>
+                    <td>37405599</td>
+                    <td>smith@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Maxwel Kinoti</td>
+                    <td>Uganda</td>
+                    <td>27434055</td>
+                    <td>maxwelj@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Michael Chris</td>
+                    <td>Nigeria</td>
+                    <td>094627784492</td>
+                    <td>mchris@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Emily Davis</td>
+                    <td>Somali</td>
+                    <td>47568407890</td>
+                    <td>emily.davis@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Alexander Mickey</td>
+                    <td>Kenya</td>
+                    <td>32952105783</td>
+                    <td>alexmickey@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section>
+        <h2>Registration Form</h2>
+        <!-- Registration form with various input types and validation -->
+        <form id="registrationForm" action="#" method="post">
+            <!-- Name field -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            
+            <!-- Email field with validation -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required>
+            </div>
+            
+            <!-- Password field with pattern validation -->
+            <div class="form-group">
+                <label for="password">Password (8+ characters, include uppercase, lowercase, number):</label>
+                <input type="password" id="password" name="password" 
+                       pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                       placeholder="Create a strong password" required>
+            </div>
+            
+            <!-- Date field -->
+            <div class="form-group">
+                <label for="birthdate">Date of Birth:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+            
+            <!-- Dropdown selection -->
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">-- Select Country--</option>
+                    <option value="us">Kenya/option>
+                    <option value="ca">Uganda</option>
+                    <option value="uk">Nigeria</option>
+                    <option value="au">Somali</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <!-- Radio buttons -->
+            <div class="form-group">
+                <p>Preferred Contact Method:</p>
+                <div class="radio-group">
+                    <input type="radio" id="contact-email" name="contact-method" value="email" required>
+                    <label for="contact-email">Email</label>
+                    
+                    <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                    <label for="contact-phone">Phone</label>
+                    
+                    <input type="radio" id="contact-sms" name="contact-method" value="sms">
+                    <label for="contact-sms">SMS</label>
+                </div>
+            </div>
+            
+            <!-- Checkboxes -->
+            <div class="form-group">
+                <p>Interests (select all that apply):</p>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="interest-tech" name="interests" value="technology">
+                    <label for="interest-tech">Technology</label>
+                    
+                    <input type="checkbox" id="interest-sports" name="interests" value="sports">
+                    <label for="interest-sports">Sports</label>
+                    
+                    <input type="checkbox" id="interest-music" name="interests" value="music">
+                    <label for="interest-music">Music</label>
+                    
+                    <input type="checkbox" id="interest-travel" name="interests" value="travel">
+                    <label for="interest-travel">Travel</label>
+                </div>
+            </div>
+            
+            <!-- Submit button -->
+            <button type="submit">Register</button>
+        </form>
+    </section>
+    
+    <section>
+        <h2>Multimedia Elements</h2>
+        <!-- Audio element -->
+        <h3>Audio </h3>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <!-- Video element -->
+        <h3>Video</h3>
+        <video width="100%" height="auto" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 HTML5 Elements Showcase</p>
+    </footer>
+</body>
+</html>
